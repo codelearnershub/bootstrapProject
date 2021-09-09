@@ -1,5 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+  <style>
+    #bloggers tr:nth-child(even){background-color: grey;}
+    
+    #bloggers tr:hover{background-color: grey;}
+  </style>
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,37 +15,48 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="../pages/index.html">BolgApp</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="../pages/index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">About Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../pages/bloggers.html">Bloggers</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../pages/register.html" tabindex="-1">Register</a>
-                    </li>
+          <a class="navbar-brand" href="#">Blogg App</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/guide/bootstrapProject/pages/index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/guide/bootstrapProject/pages/Register.html">Register</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/guide/bootstrapProject/pages/bloggers.html">Bloggers</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
                 </ul>
-                <form class="d-flex">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
-            </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
         </div>
-    </nav>
+      </nav>
+    <script src="../js/bootstrap.bundle.min.js"></script>
     <div class="container mt-5">
         <div class="row">
             <div class="col-md-12">
-                <table class="table">
+                <table id="bloggers" class="table">
                     <thead>
                         <tr>
                             <th scope="col">#</th>
@@ -53,22 +69,24 @@
                     <tbody>
                         <tr>
                             <th scope="row">1</th>
-                            <td>Mark</td>
-                            <td>Otto</td>
-                            <td>@mdo</td>
+                            <td>Gift</td>
+                            <td>Williams</td>
+                            <td>gifty</td>
                             <td><a class="btn btn-secondary" href="../pages/details.html">Details</a></td>
                         </tr>
                         <tr>
                             <th scope="row">2</th>
-                            <td>Jacob</td>
-                            <td>Thornton</td>
-                            <td>@fat</td>
+                            <td>Folake</td>
+                            <td>Oshoba</td>
+                            <td>folakeoshob</td>
                             <td><a class="btn btn-secondary" href="../pages/details.html">Details</a></td>
                         </tr>
                         <tr>
                             <th scope="row">3</th>
-                            <td colspan="2">Larry the Bird</td>
-                            <td>@twitter</td>
+                            <!-- <td colspan="2">Larry the Bird</td> -->
+                            <td>John</td>
+                            <td>Smith</td>
+                            <td>JohnSmith</td>
                             <td><a class="btn btn-secondary" href="../pages/details.html">Details</a></td>
                         </tr>
                     </tbody>
@@ -76,5 +94,6 @@
             </div>
         </div>
     </div>
+  </table>
 </body>
 </html>
