@@ -5,76 +5,105 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/bootstrap.min.css">
-    <title>Document</title>
+    <title>Bloggers</title>
+    <style>
+    #bloggers tr:nth-child(even){background-color: grey;}
+    #bloggers tr:nth-child(odd){background-color: li}
+
+        </style>
 </head>
 <body>
+    <script src="../js/bootstrap.bundle.js"></script>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="../pages/index.html">BolgApp</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="../pages/index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">About Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../pages/bloggers.html">Bloggers</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../pages/register.html" tabindex="-1">Register</a>
-                    </li>
-                </ul>
-                <form class="d-flex">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
-            </div>
+          <a class="navbar-brand" href="#">BlogApp</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../Pages/index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../Pages/AboutUs.html">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../Pages/Register.html">Register</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../Pages/Bloggers.html">Bloggers</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
         </div>
-    </nav>
-    <div class="container mt-5">
-        <div class="row">
-            <div class="col-md-12">
-                <table class="table">
+      </nav>
+      <div class="container">
+          <div class="row">
+              <div class="col md-12">
+                <table id="bloggers" class="table caption-top">
+                    <caption style="text-align: center; color:peru; font-size: 200%; font-style: oblique; margin-top: 20px;">List of Bloggers</caption>
                     <thead>
-                        <tr>
-                            <th scope="col">#</th>
-                            <th scope="col">First</th>
-                            <th scope="col">Last</th>
-                            <th scope="col">Handle</th>
-                            <th scope="col">Action</th>
-                        </tr>
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">First Name</th>
+                        <th scope="col">Last Name</th>
+                        <th scope="col">UserName</th>
+                        <th scope="col">More</th>
+                      </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <th scope="row">1</th>
-                            <td>Mark</td>
-                            <td>Otto</td>
-                            <td>@mdo</td>
-                            <td><a class="btn btn-secondary" href="../pages/details.html">Details</a></td>
-                        </tr>
-                        <tr>
-                            <th scope="row">2</th>
-                            <td>Jacob</td>
-                            <td>Thornton</td>
-                            <td>@fat</td>
-                            <td><a class="btn btn-secondary" href="../pages/details.html">Details</a></td>
-                        </tr>
-                        <tr>
-                            <th scope="row">3</th>
-                            <td colspan="2">Larry the Bird</td>
-                            <td>@twitter</td>
-                            <td><a class="btn btn-secondary" href="../pages/details.html">Details</a></td>
-                        </tr>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                        <td><a href="../Pages/details.html"><button type="button" class="btn btn-dark">Details</button></a></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                        <td><a href="../Pages/details.html"><button type="button" class="btn btn-dark">Details</button></a></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td>Larry</td>
+                        <td>the Bird</td>
+                        <td>@twitter</td>
+                        <td><a href="../Pages/details.html"><button type="button" class="btn btn-dark">Details</button></a></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">4</th>
+                        <td>Tom</td>
+                        <td>Jefferson</td>
+                        <td>@twitter</td>
+                        <td><a href="../Pages/details.html"><button type="button" class="btn btn-dark">Details</button></a></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">5</th>
+                        <td>Harry</td>
+                        <td>Kane</td>
+                        <td>@t=linkedin</td>
+                        <td><a href="../Pages/details.html"><button type="button" class="btn btn-dark">Details</button></a></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">6</th>
+                        <td>Mark</td>
+                        <td>Stevenson</td>
+                        <td>@twitter</td>
+                        <td><a href="../Pages/details.html"><button type="button" class="btn btn-dark">Details</button></a></td>
+                      </tr>
                     </tbody>
-                </table>
-            </div>
-        </div>
-    </div>
+                  </table>
+              </div>
+          </div>
+      </div>
+    
 </body>
 </html>
